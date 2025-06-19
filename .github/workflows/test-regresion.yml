@@ -20,10 +20,10 @@ jobs:
       - name: Instalar dependencias
         run: |
           python -m venv venv
-          .\venv\Scripts\activate
+          source venv/bin/activate
           pip install -r requirements.txt
       
       - name: Ejecutar pruebas
         run: |
-          .\venv\Scripts\activate
+          source venv/bin/activate
           pytest
