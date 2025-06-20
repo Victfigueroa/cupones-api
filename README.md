@@ -31,3 +31,13 @@ Manteniendo pruebas automatizadas en GitHub Actions, como hicimos con el workflo
 ## ¿Cómo detectamos la regresión y cómo la evitaríamos en el futuro?
 
 Detectamos la regresión eliminando accidentalmente el cupón "BIENVENIDA" en el archivo `cupones.py`. Al ejecutar las pruebas con `pytest`, una de ellas falló, lo que nos alertó del error. Para evitarlo en el futuro, configuramos un workflow en GitHub Actions que ejecuta automáticamente las pruebas en cada push o pull request, garantizando que cualquier cambio en el código sea validado antes de integrarse.
+
+--
+## Caputar de Pantalla de test fallando
+
+![ANTES](https://github.com/user-attachments/assets/3ac78344-4efd-4633-b78f-285791b13f49)
+
+## Caputar de Pantalla de test correcto
+
+![DESPUÉS](https://github.com/user-attachments/assets/c11cb6ab-f5d0-498c-9143-0128d8fafb19)
+
